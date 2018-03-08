@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  p{line-height: 1em;
+    }
+  h1, h2, h3, h4{
+      color: yellow;
+  	font-weight: normal;
+  	line-height: 1.1em;
+  	margin: 0 0 .5em 0;
+    background: black;
+  }
+  h1{ font-size: 1.7em; }
+  h2{ font-size: 1.7em; }
+  a{
+  	color: black;
+  	text-decoration: none;
+  }
+  	a:hover,
+  	a:active{ text-decoration: underline; }
+  body{
+      font-family: arial;
+      font-size: 80%;
+      line-height: 1.2em;
+      width: 100%;
+      margin: 0;
+      color: yellow;
+      background: black;
+  }
+  #page{ margin: 20px; }
+  #logo{
+  	width: 35%;
+  	margin-top: 5px;
+  	font-family: georgia;
+  	display: inline-block;
+  }
+  #nav{
+  	width: 60%;
+  	display: inline-block;
+  	text-align: right;
+  	float: right;
+  }
+  #content{
+  	margin: 30px 0;
+  	background: black;
+  	padding: 20px;
+  	clear: both;
+  }
+  #footer{
+  	border-bottom: 1px #ccc solid;
+  	margin-bottom: 10px;
+  }
+  	#footer p{
+  		text-align: right;
+  		text-transform: uppercase;
+  		font-size: 80%;
+  		color: grey;
+  	}
+
+  /* multiple styles seperated by a , */
+  #content,
+  ul li a{ box-shadow: 0px 1px 1px #999; }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $("#h1").hover(function(){
+          alert("Don't try it, I have the high ground!");
+        },
+        function(){
+          alert("You underestimate my power!");
+        });
+      });
+  $(document).ready(function(){
+      $("p1").click(function(){
+          $(this).hide();
+        });
+    });
+    </script>
+<!-- this website is about me -->
+    <title>Hello There</title>
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<div id="page">
+		<div id="logo">
+			<h1 id="h1">High Ground</h1>
+		</div>
+		<div id="content">
+			<h2>I Hate Sand</h2>
+			<p id="p1">
+				It's rough, coarse, and it gets everywhere.
+
+			</p>
+
+      <h3>Is it....Legal?</h3>
+			<p>
+				It's a trap!!
+			</p>
+      <p>
+        <img src="https://i.imgur.com/zv7ZZ.gif" alt="Wheee!" width="200" height="150">
+      </p>
+		</div>
+		<div id="footer">
+			<p>
+				Webpage made by me
+			</p>
+		</div>
+	</div>
+</body>
+</html>
